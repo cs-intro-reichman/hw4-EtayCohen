@@ -39,6 +39,10 @@ public class MyString {
             return false;
         }
 
+        if (str2.length() == 0) {
+            return true;
+        }
+
         for (int i = 0; i <= str1.length() - str2.length(); i++) {
             for (int j = 0; j < str2.length(); j++) {
                 if (str1.charAt(i + j) != str2.charAt(j)) {

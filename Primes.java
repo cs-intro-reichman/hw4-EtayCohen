@@ -11,7 +11,7 @@ public class Primes {
 
         for (int i = 2; i < Math.sqrt(n); i++) {
             if (arr[i]) {
-                for (int j = 1; i + i * j < n; j++) {
+                for (int j = 1; i + i * j <= n; j++) {
                     arr[i + i * j] = false;
                 }
             }
@@ -21,7 +21,7 @@ public class Primes {
 
         int primesCount = 0;
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < arrSize; i++) {
             if (arr[i] == true) {
                 System.out.println(i);
                 primesCount++;
